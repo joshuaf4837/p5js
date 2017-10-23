@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Processing Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/addons/p5.dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/p5.js"></script>
+    <script>
+        function setup() {
+            createCanvas(800, 600)
+        }
+
+        function draw() {
+            //Head
+            fill(255, 255, 204);
+            ellipse(420, 160, 100, 100);
+            
+          
+            strokeWeight(3);
+            stroke(0);
+           
+            ellipse(395, 160, 25, 25);
+            ellipse(445, 160, 25, 25);
+            
+            // Eyes
+            fill('red');
+            ellipse(395, 160, 10, 10);//right
+            ellipse(445, 160, 10, 10);//left
+            
+           
+            
+            //legs
+            fill('blue');
+            rect(345, 350, 60, 150);//right
+            rect(435, 350, 60, 150);//left
+            
+             //Body
+            fill('red');
+            rect(345, 210, 150, 180);
+           
+            
+         
+            //Hair
+            stroke( 0)
+            fill('yellow');
+            beginShape();//Begins Shape
+            curveVertex(458, 101);//1
+            curveVertex(457, 121);//2
+            curveVertex(450, 97);//3
+            curveVertex(390, 97);//4
+            curveVertex(383, 121);//5
+            curveVertex(400, 1001);//6
+            endShape();//Ends Shape
+            
+            
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

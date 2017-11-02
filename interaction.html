@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+    
+    <script>
+        function setup() {
+            createCanvas(500,500);
+           background('green')
+        }
+
+        function draw() {
+        //a line supports the whole thing  
+         fill(random(200),random(200),random(200))
+    line(mouseX,mouseY,400,100)
+       line(mouseX,mouseY,250,250)
+        }
+          function keyPressed(){
+       //yellow dots are being added, you can tap rappidly 
+       fill('yellow')
+         ellipse(mouseX,mouseY,50,50)
+        
+        
+     }  
+      function mouseDragged(){
+  //as you drag the mouse a red ellipse is being followed 
+   line(mouseX,mouseY,600,200)
+   fill('red')
+         ellipse(mouseX,mouseY,50,50)
+
+    
+   
+   
+    }
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/joshuaf4837/p5js/blob/master/interaction.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+</html>
